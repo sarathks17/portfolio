@@ -27,19 +27,30 @@
 
 // export default Navbar
 
-import React, { useState } from 'react'
+import React, { useState,useRef } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.svg' // Check the actual case
 import underline from '../../assets/nav_underline.svg' // Check the actual case
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import toogle_icon from '../../assets/menu_open.Svg'
+import menu_close_icon from '../../assets/menu_close.Svg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState("") // Initialize the state with an empty string
+  const menuRef = useRef();
 
+  const openMenu = () => {
+    menuRef.current.style.right="0";
+  }
+  const colseMenu = () => {
+    menuRef.current.style.right="-350px";
+  }
   return (
     <div className='navbar'>
       <img src={logo} alt="Logo" />
-      <ul className="nav-menu">
+      <img src={toogle_icon} onClick={openMenu} alt="" className='nav-mob-open'/>
+      <ul ref={menuRef} className="nav-menu">
+        <img onClick={colseMenu} src={menu_close_icon} alt="" className="nav-mob-close" />
         <li>
           <AnchorLink className='anchor-link' href="#home">
             <p onClick={() => setMenu("home")}>Home</p>
