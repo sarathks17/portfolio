@@ -3,8 +3,8 @@ import './Navbar.css'
 import portfoliologo from '../../assets/portfoliologo.png'
 import underline from '../../assets/nav_underline.svg' // Check the actual case
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import toogle_icon from '../../assets/menu_open.Svg'
-import menu_close_icon from '../../assets/menu_close.Svg'
+import toogle_icon from '../../assets/menu_open.svg'
+import menu_close_icon from '../../assets/menu_close.svg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState("") // Initialize the state with an empty string

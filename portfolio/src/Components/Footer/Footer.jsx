@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import portfoliologo from '../../assets/portfoliologo.png'
-import user_icon from '../../assets/user_icon.Svg'
+import user_icon from '../../assets/user_icon.svg'
 const Footer = () => {
   return (
     <div className='footer'>

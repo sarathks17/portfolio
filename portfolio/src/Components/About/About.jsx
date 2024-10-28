@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import theme_pattern from '../../assets/theme_pattern.Svg'
+import theme_pattern from '../../assets/theme_pattern.svg'
 import aboutimage from '../../assets/aboutimage.jpg'
 
 
