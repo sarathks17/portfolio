@@ -4,6 +4,9 @@
     flex-direction: column;
     gap: 30px;
 }
+.footer img{
+    width: 120px;
+}
 .footer-top{
     display: flex;
     justify-content: space-between;
@@ -19,6 +22,7 @@
 }
 .footer-email-input{
     display: flex;
+    width: 300px;
     gap: 30px;
     padding: 20px 30px;
     border-radius: 50px;
@@ -37,7 +41,7 @@
     font-size: 20px;
     padding: 22px 50px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #Df8908 -5.09%, #B415FF 106.28%);
+    background: linear-gradient(to right, #0000FF, #FFFFFF);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -73,5 +77,8 @@
         margin-bottom: 50px;
     }.footer-top-right{
         flex-direction: column;
+    }
+    .footer-email-input {
+        width: 100%;
     }
 }

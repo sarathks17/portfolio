@@ -43,15 +43,15 @@ const Contact = () => {
              <div className="contact-details">
                 <div className="contact-detail">
                     <img src={mail_icon} alt="" />
-                    <p>sarathKumar@gmail.com</p>
+                    <p>sarathkumar93622@gmail.com</p>
                 </div>
                 <div className="contact-detail">
                      <img src={call_icon} alt="" />
-                     <p>8587574789865</p>
+                     <p>+91 8891440098</p>
                 </div>
                 <div className="contact-detail">
                    <img src={location_icon} alt="" />
-                   <p>CA, United States</p>
+                   <p>Kerala, Ernakulam </p>
                 </div>
              </div>
         </div>

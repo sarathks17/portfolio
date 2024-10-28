@@ -1,7 +1,8 @@
 import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.Svg'
-import profile_img from '../../assets/about_profile.Svg'
+import aboutimage from '../../assets/aboutimage.jpg'
+
 
 
 
@@ -14,7 +15,7 @@ const About = () => {
         </div>
       <div className="about-sections">
         <div className="about-left">
-            <img src={profile_img} alt="" />
+            <img src={aboutimage} alt="" />
         </div>
         <div className="about-right">
             <div className="about-para">
@@ -32,14 +33,18 @@ const About = () => {
                     <p>JavaScript</p><hr  style={{width:"60%"}}/>
                 </div>
                 <div className="about-skill">
-                    <p>Next JS</p><hr  style={{width:"50%"}}/>
+                    <p>Node JS</p><hr  style={{width:"50%"}}/>
                 </div>
+                <div className="about-skill">
+                    <p>Mongo DB</p><hr  style={{width:"50%"}}/>
+                </div>
+               
                 
             </div>
         </div>
    
       </div>
-      <div className="about-achievements">
+      {/* <div className="about-achievements">
             <div className="about-achievement">
                 <h1>10+</h1>
                 <p>YEARS OF EXPERIENCE</p>
@@ -54,7 +59,7 @@ const About = () => {
                 <h1>15+</h1>
                 <p>ACTIVE CLIENTS</p>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

@@ -1,35 +1,6 @@
-// import React, { useState } from 'react'
-// import './Navbar.css'
-// import logo from '../../assets/logo.Svg'
-// import underline from '../../assets/nav_underline.Svg'
-// import {AnchorLink} from 'react-anchor-link-smooth-scroll'
-// const Navbar = () => {
-
-// const [menu,setMenu] = useState("")
-
-//   return (
-//     <div className='navbar'>
-//       <img src={logo} alt="" />
-//       <ul className="nav-menu">
-//         <li><AnchorLink className='anchor-link'  href="#home"><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==="home"?<img src={underline} alt=''/>:<></>}</li>
-//         <li><AnchorLink className='anchor-link'  offset={50} href="#about"><p onClick={()=>setMenu("about")}>About Me</p></AnchorLink>{menu === 'about'?<img src={underline} alt=''/>:<></>}</li>
-//         <li><AnchorLink className='anchor-link'  offset={50} href="#services"><p onClick={()=>setMenu("services")}>Services</p></AnchorLink>{menu === "services"?<img src={underline} alt=''/>:<></>}</li>
-//         <li><AnchorLink className='anchor-link'  offset={50} href="#portfolio"><p onClick={()=>setMenu("portfolio")}>Portfolio</p></AnchorLink>{menu === "portfolio"?<img src={underline} alt=''/>:<></>}</li>
-//         <li><AnchorLink className='anchor-link'  offset={50} href="#contact"><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink>{menu === "contact"?<img src={underline} alt=''/>:<></>}</li>
-//       </ul>
-      
-//       <div className="nav-connect">
-//         Connect With Me
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Navbar
-
 import React, { useState,useRef } from 'react'
 import './Navbar.css'
-import logo from '../../assets/logo.svg' // Check the actual case
+import portfoliologo from '../../assets/portfoliologo.png'
 import underline from '../../assets/nav_underline.svg' // Check the actual case
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import toogle_icon from '../../assets/menu_open.Svg'
@@ -47,7 +18,7 @@ const Navbar = () => {
   }
   return (
     <div className='navbar'>
-      <img src={logo} alt="Logo" />
+      <img src={portfoliologo} alt="Logo" className='main-logo'/>
       <img src={toogle_icon} onClick={openMenu} alt="" className='nav-mob-open'/>
       <ul ref={menuRef} className="nav-menu">
         <img onClick={colseMenu} src={menu_close_icon} alt="" className="nav-mob-close" />
