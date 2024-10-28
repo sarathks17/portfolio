@@ -56,12 +56,13 @@
 @media(max-width:768px){
     .hero img{
         margin-top: 120px;
-        width: 40%;
+        width: 90%;
+        border-radius: 55px;
     }
     .hero h1{
         margin-top: 50px;
         width: 90%;
-        font-size: 45px;
+        font-size: 43px;
     }
     .hero p{
         width: 80%;

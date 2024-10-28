@@ -74,11 +74,12 @@
     .mywork-container{
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+        margin-bottom: 22px;
 
     }
     .mywork-container img{
-        width: 100%;
-        height: 100%;
+    width: 100%; 
+       height: 9vh;
     }
     .mywork-showmore{
         padding: 20px 40px;
